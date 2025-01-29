@@ -4,6 +4,7 @@
 #
 # Author: Raul A. Flores
 
+# Need to have $UnixConfig env var defined | 2025-01-29
 
 echo "TEMP UnixConfig/bashrc.sh"
 
@@ -45,4 +46,10 @@ source $UnixConfig/functions.sh
 
 # dircolors
 eval "$(dircolors $UnixConfig/dircolors.256dark.0)";
+
+
+
+# VIM -----------------------------------------------------
+export VIMINIT='source $MYVIMRC'
+export MYVIMRC='$UnixConfig/vimrc'
 
